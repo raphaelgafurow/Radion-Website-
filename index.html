@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Radion Gafurow – Externe Fachplanung für Heizlast, Hydraulik und staatliche Förderung. Heizungsbaumeister & Energieeffizienz-Experte (DENA)." />
-  <title>Radion Gafurow – Externe Fachplanung & Förderung</title>
+  <meta name="description" content="Radion Gafurow – Externe Fachplanung für Heizlast, Hydraulik und staatliche Förderung. Heizungsbaumeister & Energieeffizienz-Experte (DENA). Für Ihren Betrieb kostenlos." />
+  <title>Radion Gafurow – Externe Fachplanung & KfW-Förderung</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="site-header">
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- NAV -->
+  <header class="site-header" id="siteHeader">
     <nav class="nav container">
-      <div class="nav__logo">
-        <span class="nav__name">Radion Gafurow</span>
-        <span class="nav__title">Heizungsbaumeister & DENA-Experte</span>
-      </div>
-      <ul class="nav__links">
+      <a href="#" class="nav__logo">
+        <div class="logo-mark">RG</div>
+        <div class="logo-text">
+          <span class="logo-name">Radion Gafurow</span>
+          <span class="logo-sub">Heizungsbaumeister · DENA-Experte</span>
+        </div>
+      </a>
+      <ul class="nav__links" id="navLinks">
         <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#prozess">Ablauf</a></li>
         <li><a href="#vorteile">Vorteile</a></li>
-        <li><a href="#angebot">Angebot</a></li>
-        <li><a href="#kontakt" class="btn btn--outline">Kontakt</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt" class="btn btn--gold btn--sm">Gespräch anfragen</a></li>
       </ul>
-      <button class="nav__burger" aria-label="Menü öffnen">
+      <button class="nav__burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -33,134 +39,234 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__bg"></div>
+    <div class="hero__bg">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="hero__grid"></div>
+    </div>
     <div class="container hero__inner">
-      <div class="hero__text">
-        <p class="hero__eyebrow">Ihre externe Fachplanung für Heizlast, Hydraulik & staatliche Förderung</p>
-        <h1 class="hero__headline">
-          Voller Fokus<br>auf das Handwerk.<br>
-          <span class="gold">Ich übernehme<br>den Papierkram.</span>
+      <div class="hero__content">
+        <div class="hero__pill reveal">
+          <span class="dot"></span>
+          Heizungsbaumeister &amp; Energieeffizienz-Experte (DENA)
+        </div>
+        <h1 class="hero__headline reveal delay-1">
+          Voller Fokus<br>auf das Handwerk.
+          <span class="hero__headline--gold">Ich übernehme<br>den Papierkram.</span>
         </h1>
-        <p class="hero__sub">
-          Als Heizungsbaumeister und Energieeffizienz-Experte (DENA) nehme ich Ihnen
-          den bürokratischen Flaschenhals beim Heizungstausch komplett ab.
-          Sie bauen die Anlage&nbsp;– ich liefere rechtssichere Zahlen und sichere die Förderung.
+        <p class="hero__sub reveal delay-2">
+          Als zertifizierter Fachplaner nehme ich Ihnen den bürokratischen
+          Flaschenhals beim Heizungstausch komplett ab — von der
+          Heizlastberechnung bis zur vollständigen KfW-Förderabwicklung.
+          <strong>Für Ihren Betrieb kostenlos.</strong>
         </p>
-        <div class="hero__cta">
-          <a href="#kontakt" class="btn btn--gold">Jetzt Kontakt aufnehmen</a>
-          <a href="#leistungen" class="btn btn--ghost">Leistungen ansehen</a>
+        <div class="hero__cta reveal delay-3">
+          <a href="#kontakt" class="btn btn--gold btn--lg">
+            Kostenlos anfragen
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#prozess" class="btn btn--ghost btn--lg">Wie es funktioniert</a>
+        </div>
+        <div class="hero__trust reveal delay-4">
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Keine Kosten für Ihren Betrieb
+          </div>
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            DIN EN 12831 zertifiziert
+          </div>
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            50 % staatlicher Förderzuschuss
+          </div>
         </div>
       </div>
-      <div class="hero__badge">
-        <div class="badge">
-          <span class="badge__top">Ihr Vorteil</span>
-          <span class="badge__price">0,00&nbsp;€</span>
-          <span class="badge__bottom">Kosten für Ihren Betrieb</span>
+      <div class="hero__visual reveal delay-2">
+        <div class="hero__cards">
+          <div class="stat-card stat-card--offset">
+            <span class="stat-val gold" data-count="50">0</span><span class="stat-unit gold">%</span>
+            <span class="stat-lbl">Staat übernimmt<br>mein Honorar</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-val gold">0,00</span><span class="stat-unit gold">€</span>
+            <span class="stat-lbl">Kosten für<br>Ihren Betrieb</span>
+          </div>
+          <div class="stat-card stat-card--offset">
+            <span class="stat-val gold" data-count="100">0</span><span class="stat-unit gold">%</span>
+            <span class="stat-lbl">Entlastung vom<br>Papierkram</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="hero__scroll-hint" aria-hidden="true">
-      <span></span>
+    <div class="hero__scroll">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="container stats-bar__inner">
+      <div class="stats-bar__item reveal">
+        <span class="stats-bar__val gold" data-count="50">0</span><span class="gold">%</span>
+        <span class="stats-bar__lbl">Förderung auf die Planung</span>
+      </div>
+      <div class="stats-bar__sep"></div>
+      <div class="stats-bar__item reveal delay-1">
+        <span class="stats-bar__val gold">0 €</span>
+        <span class="stats-bar__lbl">Kosten für Betriebe</span>
+      </div>
+      <div class="stats-bar__sep"></div>
+      <div class="stats-bar__item reveal delay-2">
+        <span class="stats-bar__val gold">DIN EN 12831</span>
+        <span class="stats-bar__lbl">Norm-konforme Berechnung</span>
+      </div>
+      <div class="stats-bar__sep"></div>
+      <div class="stats-bar__item reveal delay-3">
+        <span class="stats-bar__val gold" data-count="5">0</span><span class="gold">%</span>
+        <span class="stats-bar__lbl">Extra-Förderung mit ISFP</span>
+      </div>
     </div>
   </section>
 
   <!-- LEISTUNGEN -->
   <section class="section leistungen" id="leistungen">
     <div class="container">
-      <p class="section__eyebrow">Mein Service für Ihren Betrieb</p>
-      <h2 class="section__headline">Was ich für Sie erledige</h2>
+      <div class="section__hd reveal">
+        <p class="eyebrow">Mein Service für Ihren Betrieb</p>
+        <h2 class="headline">Alles aus einer Hand</h2>
+        <p class="sub">Sie konzentrieren sich auf die Installation. Ich kümmere mich um alle Berechnungen, Formulare und die Fördermittelabwicklung.</p>
+      </div>
       <div class="cards">
 
-        <div class="card">
-          <div class="card__icon">&#128196;</div>
-          <h3 class="card__title">Komplette Förderabwicklung</h3>
-          <p class="card__text">
-            Von der BZA bis zur BND im KFW-Portal. Sie loggen sich nie wieder ein
-            und haften nicht für Formfehler.
-          </p>
+        <div class="card reveal delay-1">
+          <div class="card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Komplette Förderabwicklung</h3>
+          <p>Von der BZA bis zur BND im KfW-Portal — vollständig und fehlerfrei. Sie loggen sich nie wieder ein und haften nicht für Formfehler.</p>
+          <ul class="card__list">
+            <li>BZA &amp; BND im KfW-Portal</li>
+            <li>Rechtssichere Dokumentation</li>
+            <li>Keine Haftung für Formfehler</li>
+          </ul>
         </div>
 
-        <div class="card">
-          <div class="card__icon">&#128200;</div>
-          <h3 class="card__title">Heizlast & VDZ-Formular</h3>
-          <p class="card__text">
-            Ich erstelle die raumweise Heizlastberechnung (DIN EN 12831) und liefere
-            die exakten Einstellwerte für den hydraulischen Abgleich.
-          </p>
+        <div class="card reveal delay-2">
+          <div class="card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Heizlast &amp; VDZ-Formular</h3>
+          <p>Raumweise Heizlastberechnung nach DIN EN 12831 mit exakten Einstellwerten für den hydraulischen Abgleich.</p>
+          <ul class="card__list">
+            <li>DIN EN 12831 konform</li>
+            <li>Hydraulischer Abgleich</li>
+            <li>VDZ-Formular vollständig</li>
+          </ul>
         </div>
 
-        <div class="card card--highlight">
-          <div class="card__icon">&#128640;</div>
-          <h3 class="card__title">ISFP-Booster</h3>
-          <p class="card__text">
-            Schicken Sie Kunden vorab zu mir. Mit einem Sanierungsfahrplan verdopple
-            ich deren förderfähiges Budget und sichere <strong>5&nbsp;%
-            Extra-Förderung</strong>.
-          </p>
+        <div class="card card--gold reveal delay-3">
+          <div class="card__badge">Bestseller</div>
+          <div class="card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>ISFP-Booster</h3>
+          <p>Schicken Sie Kunden vorab zu mir. Mit einem Sanierungsfahrplan verdopple ich deren förderfähiges Budget.</p>
+          <ul class="card__list">
+            <li>Förderfähiges Budget verdoppeln</li>
+            <li>5 % Extra-Förderung sichern</li>
+            <li>Individuelle Sanierungsplanung</li>
+          </ul>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- VORTEILE TABELLE -->
+  <!-- PROZESS -->
+  <section class="section prozess" id="prozess">
+    <div class="container">
+      <div class="section__hd reveal">
+        <p class="eyebrow">Der Ablauf</p>
+        <h2 class="headline">So einfach funktioniert die Zusammenarbeit</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal delay-1">
+          <div class="step__num">01</div>
+          <h3>Sie kontaktieren mich</h3>
+          <p>Schicken Sie mir die Projektdetails — Gebäudedaten, Heizungstyp und Ihre Kontaktdaten. Per Telefon, E-Mail oder Kontaktformular.</p>
+        </div>
+        <div class="step__arrow reveal delay-2" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step reveal delay-2">
+          <div class="step__num">02</div>
+          <h3>Ich erledige alles</h3>
+          <p>Vor-Ort-Aufmaß, Heizlastberechnung, Förderanträge — ich übernehme die komplette Bürokratie und kommuniziere direkt mit Ihrem Kunden.</p>
+        </div>
+        <div class="step__arrow reveal delay-3" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step reveal delay-3">
+          <div class="step__num">03</div>
+          <h3>Sie bauen — ich sichere die Förderung</h3>
+          <p>Während Sie die Anlage installieren, sichere ich die staatliche Förderung. Abrechnung direkt über mich — für Sie 0,00 €.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VORTEILE -->
   <section class="section vorteile" id="vorteile">
     <div class="container">
-      <p class="section__eyebrow">Drei Perspektiven, ein Ergebnis</p>
-      <h2 class="section__headline">Warum es sich für alle lohnt</h2>
-      <div class="table-grid">
+      <div class="section__hd reveal">
+        <p class="eyebrow">Drei Perspektiven</p>
+        <h2 class="headline">Warum alle profitieren</h2>
+      </div>
+      <div class="vtable">
 
-        <div class="table-col">
-          <h3 class="table-col__head gold">Ihr Profit</h3>
-          <ul class="table-col__list">
-            <li>
-              <span class="check">✓</span>
-              <span>Voller Fokus auf Montage</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span>Keine unbezahlte Bürozeit</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span>Haftungsrisiko ausgelagert</span>
-            </li>
+        <div class="vtable__col reveal delay-1">
+          <div class="vtable__head">
+            <div class="vtable__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3>Ihr Profit</h3>
+          </div>
+          <ul>
+            <li><span class="chk">✓</span>Voller Fokus auf die Montage</li>
+            <li><span class="chk">✓</span>Keine unbezahlte Bürozeit</li>
+            <li><span class="chk">✓</span>Haftungsrisiko ausgelagert</li>
+            <li><span class="chk">✓</span>Mehr Projekte pro Woche</li>
           </ul>
         </div>
 
-        <div class="table-col table-col--center">
-          <h3 class="table-col__head gold">Kundenvorteil</h3>
-          <ul class="table-col__list">
-            <li>
-              <span class="check">✓</span>
-              <span>Maximale Fördersicherheit</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span>Optimal berechnete Anlage</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span>50&nbsp;% Zuschuss auf die Planung</span>
-            </li>
+        <div class="vtable__col vtable__col--center reveal delay-2">
+          <div class="vtable__head">
+            <div class="vtable__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Kundenvorteil</h3>
+          </div>
+          <ul>
+            <li><span class="chk">✓</span>Maximale Fördersicherheit</li>
+            <li><span class="chk">✓</span>Optimal berechnete Anlage</li>
+            <li><span class="chk">✓</span>50 % Zuschuss auf die Planung</li>
+            <li><span class="chk">✓</span>Unabhängige Baubegleitung</li>
           </ul>
         </div>
 
-        <div class="table-col">
-          <h3 class="table-col__head gold">Mein Job</h3>
-          <ul class="table-col__list">
-            <li>
-              <span class="check">✓</span>
-              <span>Vor-Ort-Aufmaß & Berechnung</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span>BZA- und BND-Erstellung</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span>Unabhängige Baubegleitung</span>
-            </li>
+        <div class="vtable__col reveal delay-3">
+          <div class="vtable__head">
+            <div class="vtable__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Mein Job</h3>
+          </div>
+          <ul>
+            <li><span class="chk">✓</span>Vor-Ort-Aufmaß &amp; Berechnung</li>
+            <li><span class="chk">✓</span>BZA- und BND-Erstellung</li>
+            <li><span class="chk">✓</span>Unabhängige Baubegleitung</li>
+            <li><span class="chk">✓</span>Direkte Abrechnung mit Endkunden</li>
           </ul>
         </div>
 
@@ -168,23 +274,70 @@
     </div>
   </section>
 
-  <!-- ANGEBOT BANNER -->
-  <section class="section angebot" id="angebot">
-    <div class="container">
-      <div class="angebot__inner">
-        <div class="angebot__text">
-          <h2 class="angebot__headline">
-            Ihr Vorteil: <span class="gold">0,00&nbsp;€ Kosten</span>
-            &amp; <span class="gold">100&nbsp;% Entlastung</span>
-          </h2>
-          <p class="angebot__body">
-            Meine Leistung kostet Ihren Betrieb keinen Cent. Ich rechne direkt
-            mit dem Endkunden ab. Das beste Verkaufsargument für den Bauherren:
-            Der Staat übernimmt <strong>50&nbsp;% meines Honorars</strong> für
-            die Baubegleitung.
-          </p>
+  <!-- OFFER BANNER -->
+  <section class="offer-banner">
+    <div class="container offer-banner__inner reveal">
+      <div class="offer-banner__text">
+        <h2>Ihr Vorteil: <span class="gold">0,00 € Kosten</span> &amp; <span class="gold">100 % Entlastung</span></h2>
+        <p>Meine Leistung kostet Ihren Betrieb keinen Cent. Ich rechne direkt mit dem Endkunden ab. Der Staat übernimmt 50 % meines Honorars für die Baubegleitung — das beste Verkaufsargument für Ihre Kunden.</p>
+      </div>
+      <a href="#kontakt" class="btn btn--gold btn--lg">
+        Jetzt gemeinsam starten
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container faq__inner">
+      <div class="faq__sidebar reveal">
+        <p class="eyebrow">Häufige Fragen</p>
+        <h2 class="headline">Alles auf einen Blick</h2>
+        <a href="#kontakt" class="btn btn--outline" style="margin-top:16px">Weitere Fragen stellen</a>
+      </div>
+      <div class="faq__list">
+
+        <div class="faq-item reveal delay-1">
+          <button class="faq-q" aria-expanded="false">
+            Warum kostet Ihr Service meinen Betrieb nichts?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div>
+            <p>Ich rechne mein Honorar direkt mit dem Endkunden ab. Da der Staat 50 % meines Honorars als Energieberatungsleistung fördert, ist mein Service für Ihre Kunden ebenfalls attraktiv — und für Sie vollkommen kostenfrei.</p>
+          </div></div>
         </div>
-        <a href="#kontakt" class="btn btn--gold btn--lg">Erste Anlage starten</a>
+
+        <div class="faq-item reveal delay-2">
+          <button class="faq-q" aria-expanded="false">
+            Was ist die Heizlastberechnung nach DIN EN 12831?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div>
+            <p>Die Heizlastberechnung nach DIN EN 12831 ist die normgerechte Ermittlung des Wärmebedarfs je Raum. Sie ist Pflichtbestandteil für die hydraulische Auslegung und Voraussetzung für die KfW-Förderung beim Heizungstausch.</p>
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal delay-3">
+          <button class="faq-q" aria-expanded="false">
+            Was ist der ISFP-Booster?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div>
+            <p>Schicken Sie Kunden vor der Auftragserteilung zu mir. Ich erstelle einen Individuellen Sanierungsfahrplan (ISFP), der das förderfähige Budget verdoppeln und zusätzlich 5 % Extra-Förderung sichern kann.</p>
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal delay-4">
+          <button class="faq-q" aria-expanded="false">
+            Wie schnell erhalte ich die Unterlagen?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div>
+            <p>Nach Aufmaß und Datenübermittlung erhalten Sie die vollständige Heizlastberechnung und alle Förderunterlagen in der Regel innerhalb von 2–3 Werktagen. Bei dringendem Bedarf sprechen Sie mich direkt an.</p>
+          </div></div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -192,25 +345,23 @@
   <!-- ÜBER MICH -->
   <section class="section ueber">
     <div class="container ueber__inner">
-      <div class="ueber__text">
-        <p class="section__eyebrow">Über mich</p>
-        <h2 class="section__headline">Radion Gafurow</h2>
-        <p class="ueber__role gold">Heizungsbaumeister & Energieeffizienz-Experte (DENA)</p>
-        <p class="ueber__body">
-          Ich kenne beide Seiten: die Baustelle und den Schreibtisch. Als
-          zertifizierter Energieeffizienz-Experte kombiniere ich handwerkliches
-          Know-how mit tiefem Fachwissen zur staatlichen Förderung – damit Sie
-          sich auf das konzentrieren können, was Sie am besten können.
-        </p>
-        <a href="#kontakt" class="btn btn--outline">Gespräch vereinbaren</a>
-      </div>
-      <div class="ueber__visual">
-        <div class="ueber__quote">
-          <blockquote>
-            &bdquo;Lassen Sie uns die nächste Anlage gemeinsam auf die Schiene setzen.&ldquo;
-          </blockquote>
-          <cite>– Radion Gafurow</cite>
+      <div class="ueber__visual reveal">
+        <div class="ueber__photo">
+          <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
+        <div class="ueber__cert">
+          <span>DENA</span>
+          <span class="ueber__cert-lbl">Zertifiziert</span>
+        </div>
+      </div>
+      <div class="ueber__text reveal delay-2">
+        <p class="eyebrow">Über mich</p>
+        <h2 class="headline" style="margin-bottom:6px">Radion Gafurow</h2>
+        <p class="ueber__role">Heizungsbaumeister &amp; Energieeffizienz-Experte (DENA)</p>
+        <p class="ueber__body">Ich kenne beide Seiten der Arbeit: die Baustelle und den Schreibtisch. Als ausgebildeter Heizungsbaumeister und zertifizierter Energieeffizienz-Experte (DENA) kombiniere ich handwerkliches Know-how mit fundiertem Wissen über staatliche Förderprogramme.</p>
+        <p class="ueber__body">Mein Ziel: Sie sollen sich auf das konzentrieren, was Sie am besten können — die Installation. Den Rest erledige ich. Professionell, rechtssicher und termingerecht.</p>
+        <blockquote class="ueber__quote">„Lassen Sie uns die nächste Anlage gemeinsam auf die Schiene setzen."</blockquote>
+        <a href="#kontakt" class="btn btn--outline">Jetzt Gespräch vereinbaren</a>
       </div>
     </div>
   </section>
@@ -218,48 +369,70 @@
   <!-- KONTAKT -->
   <section class="section kontakt" id="kontakt">
     <div class="container">
-      <p class="section__eyebrow">Direkt starten</p>
-      <h2 class="section__headline">Jetzt Kontakt aufnehmen</h2>
+      <div class="section__hd reveal">
+        <p class="eyebrow">Direkt starten</p>
+        <h2 class="headline">Kontakt aufnehmen</h2>
+        <p class="sub">Ich melde mich in der Regel innerhalb von 24 Stunden.</p>
+      </div>
       <div class="kontakt__grid">
 
-        <div class="kontakt__info">
-          <h3 class="kontakt__subhead">Radion Gafurow</h3>
-          <p class="kontakt__role">Heizungsbaumeister & Energieeffizienz-Experte (DENA)</p>
+        <div class="kontakt__info reveal delay-1">
+          <h3>Radion Gafurow</h3>
+          <p class="kontakt__role">Heizungsbaumeister &amp; Energieeffizienz-Experte (DENA)</p>
           <ul class="kontakt__list">
             <li>
-              <span class="kontakt__icon">&#128222;</span>
-              <a href="tel:+4916092264012">0160 / 922 640 12</a>
+              <div class="k-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.92 16z"/></svg>
+              </div>
+              <div>
+                <span class="k-label">Telefon</span>
+                <a href="tel:+4916092264012" class="k-val">0160 / 922 640 12</a>
+              </div>
             </li>
             <li>
-              <span class="kontakt__icon">&#9993;</span>
-              <a href="mailto:radiongafurow@gmail.com">radiongafurow@gmail.com</a>
+              <div class="k-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="k-label">E-Mail</span>
+                <a href="mailto:radiongafurow@gmail.com" class="k-val">radiongafurow@gmail.com</a>
+              </div>
             </li>
           </ul>
+          <div class="kontakt__note">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p>Für dringende Anfragen rufen Sie direkt an. Erreichbar Mo–Fr, 8–18 Uhr.</p>
+          </div>
         </div>
 
-        <form class="kontakt__form" novalidate>
+        <form class="kontakt__form reveal delay-2" id="contactForm" novalidate>
           <div class="form-row">
-            <label for="name">Ihr Name</label>
-            <input type="text" id="name" name="name" placeholder="Max Mustermann" required />
+            <label for="f-name">Name *</label>
+            <input type="text" id="f-name" name="name" placeholder="Max Mustermann" required autocomplete="name" />
           </div>
           <div class="form-row">
-            <label for="firma">Firma / Betrieb</label>
-            <input type="text" id="firma" name="firma" placeholder="Mustermann GmbH" />
+            <label for="f-firma">Firma / Betrieb</label>
+            <input type="text" id="f-firma" name="firma" placeholder="Mustermann GmbH" autocomplete="organization" />
           </div>
           <div class="form-row">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" placeholder="max@muster.de" required />
+            <label for="f-email">E-Mail *</label>
+            <input type="email" id="f-email" name="email" placeholder="max@muster.de" required autocomplete="email" />
           </div>
           <div class="form-row">
-            <label for="telefon">Telefon</label>
-            <input type="tel" id="telefon" name="telefon" placeholder="0160 / 000 000 00" />
+            <label for="f-tel">Telefon</label>
+            <input type="tel" id="f-tel" name="telefon" placeholder="0160 / 000 000 00" autocomplete="tel" />
           </div>
           <div class="form-row form-row--full">
-            <label for="nachricht">Nachricht</label>
-            <textarea id="nachricht" name="nachricht" rows="4" placeholder="Wie kann ich Ihnen helfen?"></textarea>
+            <label for="f-msg">Nachricht</label>
+            <textarea id="f-msg" name="nachricht" rows="4" placeholder="Wie kann ich Ihnen helfen? Beschreiben Sie kurz Ihr Projekt..."></textarea>
           </div>
-          <button type="submit" class="btn btn--gold btn--block">Nachricht senden</button>
-          <p class="form__hint">Ich melde mich in der Regel innerhalb von 24&nbsp;Stunden.</p>
+          <div class="form-row form-row--full">
+            <button type="submit" class="btn btn--gold btn--block" id="submitBtn">
+              <span id="btnText">Nachricht senden</span>
+              <svg id="btnIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="form__hint">* Pflichtfelder · Ihre Daten werden vertraulich behandelt.</p>
+          </div>
         </form>
 
       </div>
@@ -268,15 +441,57 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <p class="footer__name">Radion Gafurow</p>
-      <p class="footer__copy">&copy; 2026 · Alle Rechte vorbehalten</p>
-      <ul class="footer__nav">
-        <li><a href="#">Impressum</a></li>
-        <li><a href="#">Datenschutz</a></li>
-      </ul>
+    <div class="footer__top">
+      <div class="container footer__top-inner">
+        <div class="footer__brand">
+          <div class="nav__logo" style="margin-bottom:14px">
+            <div class="logo-mark">RG</div>
+            <div class="logo-text">
+              <span class="logo-name">Radion Gafurow</span>
+              <span class="logo-sub">Heizungsbaumeister · DENA-Experte</span>
+            </div>
+          </div>
+          <p class="footer__tagline">Externe Fachplanung für Heizlast,<br>Hydraulik &amp; staatliche Förderung.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Leistungen</h4>
+          <ul>
+            <li><a href="#leistungen">Förderabwicklung</a></li>
+            <li><a href="#leistungen">Heizlast &amp; VDZ</a></li>
+            <li><a href="#leistungen">ISFP-Booster</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Unternehmen</h4>
+          <ul>
+            <li><a href="#prozess">Ablauf</a></li>
+            <li><a href="#vorteile">Vorteile</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+4916092264012">0160 / 922 640 12</a></li>
+            <li><a href="mailto:radiongafurow@gmail.com">radiongafurow@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2026 Radion Gafurow · Alle Rechte vorbehalten</p>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
+
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#kontakt" class="btn btn--gold">Kostenlos anfragen</a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
