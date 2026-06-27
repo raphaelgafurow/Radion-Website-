@@ -81,7 +81,8 @@ window.addEventListener('scroll', () => {
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const btnText = document.getElementById('btnText');
-const btnIcon = document.getElementById('btnIcon');
+const btnIconArrow = document.getElementById('btnIconArrow');
+const btnIconCheck = document.getElementById('btnIconCheck');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -92,21 +93,19 @@ form.addEventListener('submit', e => {
 
   submitBtn.disabled = true;
   btnText.textContent = 'Wird gesendet…';
-  btnIcon.style.display = 'none';
+  btnIconArrow.classList.add('icon-hidden');
 
   setTimeout(() => {
-    submitBtn.style.background = '#1a6e3e';
-    submitBtn.style.borderColor = '#1a6e3e';
+    submitBtn.classList.add('btn--success');
     btnText.textContent = 'Nachricht gesendet ✓';
-    btnIcon.style.display = '';
-    btnIcon.innerHTML = '<polyline points="20 6 9 17 4 12"/>';
+    btnIconCheck.classList.remove('icon-hidden');
     form.reset();
     setTimeout(() => {
       submitBtn.disabled = false;
-      submitBtn.style.background = '';
-      submitBtn.style.borderColor = '';
+      submitBtn.classList.remove('btn--success');
       btnText.textContent = 'Nachricht senden';
-      btnIcon.innerHTML = '<path d="M5 12h14M12 5l7 7-7 7"/>';
+      btnIconArrow.classList.remove('icon-hidden');
+      btnIconCheck.classList.add('icon-hidden');
     }, 4000);
   }, 900);
 });

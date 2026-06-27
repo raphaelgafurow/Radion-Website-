@@ -223,6 +223,13 @@ button{font-family:var(--font)}
 .form-row input:focus,.form-row textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,39,.1)}
 .form__hint{font-size:12px;color:var(--muted);text-align:center;margin-top:4px}
 
+/* Inline-style replacements */
+.faq__cta { margin-top: 16px; }
+.ueber__name { margin-bottom: 6px; }
+.footer__logo { margin-bottom: 14px; }
+.icon-hidden { display: none; }
+.btn--success { background: #1a6e3e !important; border-color: #1a6e3e !important; }
+
 /* ── FOOTER ── */
 .footer{background:var(--bg);border-top:1px solid var(--border)}
 .footer__top{padding:56px 0 44px}

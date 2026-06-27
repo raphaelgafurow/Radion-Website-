@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Radion Gafurow – Externe Fachplanung für Heizlast, Hydraulik und staatliche Förderung. Heizungsbaumeister & Energieeffizienz-Experte (DENA). Für Ihren Betrieb kostenlos." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';" />
+  <meta name="referrer" content="no-referrer" />
   <title>Radion Gafurow – Externe Fachplanung & KfW-Förderung</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
@@ -294,7 +296,7 @@
       <div class="faq__sidebar reveal">
         <p class="eyebrow">Häufige Fragen</p>
         <h2 class="headline">Alles auf einen Blick</h2>
-        <a href="#kontakt" class="btn btn--outline" style="margin-top:16px">Weitere Fragen stellen</a>
+        <a href="#kontakt" class="btn btn--outline faq__cta">Weitere Fragen stellen</a>
       </div>
       <div class="faq__list">
 
@@ -356,7 +358,7 @@
       </div>
       <div class="ueber__text reveal delay-2">
         <p class="eyebrow">Über mich</p>
-        <h2 class="headline" style="margin-bottom:6px">Radion Gafurow</h2>
+        <h2 class="headline ueber__name">Radion Gafurow</h2>
         <p class="ueber__role">Heizungsbaumeister &amp; Energieeffizienz-Experte (DENA)</p>
         <p class="ueber__body">Ich kenne beide Seiten der Arbeit: die Baustelle und den Schreibtisch. Als ausgebildeter Heizungsbaumeister und zertifizierter Energieeffizienz-Experte (DENA) kombiniere ich handwerkliches Know-how mit fundiertem Wissen über staatliche Förderprogramme.</p>
         <p class="ueber__body">Mein Ziel: Sie sollen sich auf das konzentrieren, was Sie am besten können — die Installation. Den Rest erledige ich. Professionell, rechtssicher und termingerecht.</p>
@@ -429,7 +431,8 @@
           <div class="form-row form-row--full">
             <button type="submit" class="btn btn--gold btn--block" id="submitBtn">
               <span id="btnText">Nachricht senden</span>
-              <svg id="btnIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg id="btnIconArrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg id="btnIconCheck" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" class="icon-hidden"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <p class="form__hint">* Pflichtfelder · Ihre Daten werden vertraulich behandelt.</p>
           </div>
@@ -444,7 +447,7 @@
     <div class="footer__top">
       <div class="container footer__top-inner">
         <div class="footer__brand">
-          <div class="nav__logo" style="margin-bottom:14px">
+          <div class="nav__logo footer__logo">
             <div class="logo-mark">RG</div>
             <div class="logo-text">
               <span class="logo-name">Radion Gafurow</span>
