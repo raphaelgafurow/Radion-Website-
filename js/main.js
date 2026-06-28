@@ -73,12 +73,15 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 
 // Sticky CTA
 const stickyCta = document.getElementById('stickyCta');
-window.addEventListener('scroll', () => {
-  stickyCta.classList.toggle('visible', window.scrollY > 500);
-}, { passive: true });
+if (stickyCta) {
+  window.addEventListener('scroll', () => {
+    stickyCta.classList.toggle('visible', window.scrollY > 500);
+  }, { passive: true });
+}
 
 // Contact form
 const form = document.getElementById('contactForm');
+if (form) {
 const submitBtn = document.getElementById('submitBtn');
 const btnText = document.getElementById('btnText');
 const btnIconArrow = document.getElementById('btnIconArrow');
@@ -109,3 +112,4 @@ form.addEventListener('submit', e => {
     }, 4000);
   }, 900);
 });
+}
